@@ -5,3 +5,45 @@ Content-Type: application/json
   "email": "example1@gmail.com",
   "password": "123456"
 }
+
+###
+POST http://localhost:3000/partners
+{
+  "name": "Partner 1",
+  "email": "partner1@example.com",
+  "password": "123456",
+  "company_name": "Company 1",
+}
+
+###
+POST http://localhost:3000/customers
+{
+  "name": "Partner 1",
+  "email": "partner1@example.com",
+  "password": "123456",
+  "company_name": "Company 1",
+  "address": "Address 1",
+  "phone": "1234567890"
+}
+
+
+### Create an event by partner
+POST http://localhost:3000/partners/events
+{
+  "name": "Partner 1",
+  "description": "Description 1",
+  "date": "2021-12-01T00:00:00",
+  "location": "Location 1"
+}
+
+### List of events by partner
+GET http://localhost:3000/partners/events
+
+### List of one event by partner
+GET http://localhost:3000/partners/events/1
+
+### List of events
+GET http://localhost:3000/events
+
+### List of one event
+GET http://localhost:3000/events/1
