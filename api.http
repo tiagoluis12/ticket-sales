@@ -2,7 +2,7 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "example1@gmail.com",
+  "email": "partner1@example.com",
   "password": "123456"
 }
 
@@ -33,6 +33,7 @@ Content-Type: application/json
 ### Create an event by partner
 POST http://localhost:3000/partners/events
 Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwYXJ0bmVyMUBleGFtcGxlLmNvbSIsImlhdCI6MTczOTIyODcwMSwiZXhwIjoxNzM5MjMyMzAxfQ.CVJ1UJ-1gI2LFNxBO9lEWmcUCd2neCpAyY1NtfWDYQQ
 
 {
   "name": "Partner 1",
